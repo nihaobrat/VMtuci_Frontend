@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Профиль</title>
+
+    <style>
+    body {
+      background-image: url('Rectangle.png');
+      background-size: cover;
+    }
+
+    .rec-theme {
+      background-image: url('Rec.png');
+      background-size: cover;
+    }
+  </style>
+</head>
+<body>
+
+
+
+  <script>
+    function changeTheme() {
+      var body = document.querySelector('body');
+      var themeButton = document.querySelector('.theme-button');
+      body.classList.toggle('rec-theme');
+      themeButton.classList.toggle('rec');
+
+      // Сохраняем состояние темы в localStorage
+      var isRecTheme = body.classList.contains('rec-theme');
+      localStorage.setItem('theme', isRecTheme ? 'rec' : 'default');
+    }
+
+    // Восстанавливаем состояние темы при загрузке страницы
+    window.addEventListener('DOMContentLoaded', function() {
+      var body = document.querySelector('body');
+      var themeButton = document.querySelector('.theme-button');
+      var savedTheme = localStorage.getItem('theme');
+
+      if (savedTheme === 'rec') {
+        body.classList.add('rec-theme');
+        themeButton.classList.add('rec');
+      }
+    });
+  </script>
+
+
+    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 1092px; height: 682px; background-color: rgba(0,0,0,0.5); border-radius: 25px;">
+        <a href="profile.html"><img src="Arrow 3.png" alt="Назад" style="position: absolute; top: 20px; left: 20px; width: 27px;"></a>
+        <p style="position: absolute; top: 5px; left: 60px; color: white; font-size: 18px;"><b>John Snow</b></p>
+        <svg width="120" height="120" viewBox="0 0 120 120" style="position: absolute; top: 70px; left: 60px;">
+            <ellipse cx="60" cy="60" rx="60" ry="60" fill="#D9D9D9"/>
+        </svg>
+        <img src="ava.png" alt="Назад" style="position: absolute; top: 65px; left: 50px;">
+        <ul style="position: absolute; top: 235px; left: 25px; color: white; font-size: 14px; list-style: none;">
+            <li><b>Кристофер Эллиот</b></li>
+        </ul>
+        <ul style="position: absolute; top: 258px; left: 25px; color: white; font-size: 14px; list-style: none;">
+            <li><b>Цифровой создатель</b></li>
+        </ul>
+        <ul style="position: absolute; top: 281px; left: 25px; color: white; font-size: 14px; list-style: none;">
+            <li><b>Люблю улучшать в первую очередь</b></li>
+        </ul>
+        <ul style="position: absolute; top: 298px; left: 25px; color: white; font-size: 14px; list-style: none;">
+            <li><b>себя, а затем и весь мир!</b></li>
+        </ul>
+        <ul style="position: absolute; top: 324px; left: 45px; color: white; font-size: 14px; list-style: none;">
+            <li><b>Москва, Россия</b></li>
+        </ul>
+        <img src="local.png" alt="Москва, Россия" style="position: absolute; top: 335px; right: 1010px; width: 18px;">
+        <button style="position: absolute; bottom: 170px; left: 55px; background-color: #65A9E3; color: white; padding: 10px 15px; border-radius: 40px; border: none; cursor: pointer; width: 210px;"><b>Подписаться</b></button>
+        <button style="position: absolute; bottom: 120px; left: 55px; background-color: #65A9E3; color: white; padding: 10px 15px; border-radius: 40px; border: none; cursor: pointer; width: 113px; background-color: rgba(101, 169, 227, 0.04);"><b>Сообщения</b></button>
+        <img src="addfriend.png" alt="Добавить друга" style="position: absolute; bottom: 125px; left: 185px; width: 20px;  background-color: rgba(101, 169, 227, 0.04);  border-radius: 20px; border: none; cursor: pointer; width: 25px;">
+        <img src="more.png" alt="Добавить друга" style="position: absolute; bottom: 125px; left: 225px; width: 20px; background-color: rgba(101, 169, 227, 0.04);  border-radius: 20px; border: none; cursor: pointer; width: 25px;">
+
+        <img src="Rectangle 37.png" style="position: absolute; bottom: 125px; left: 330px;" >
+
+        <img src="Rectangle 28.png" style="position: absolute; bottom: 455px; left: 860px;">
+        <img src="Rectangle 32.png" style="position: absolute; bottom: 455px; left: 656px;">
+        <img src="Rectangle 35.png" style="position: absolute; bottom: 455px; left: 452px;">
+        <img src="Rectangle 33.png" style="position: absolute; bottom: 251px; left: 452px;">
+        <img src="Rectangle 30.png" style="position: absolute; bottom: 251px; left: 656px;">
+        <img src="Rectangle 29.png" style="position: absolute; bottom: 251px; left: 860px;">
+        <img src="Rectangle 36.png" style="position: absolute; bottom: 51px; left: 860px;">
+        <img src="Rectangle 31.png" style="position: absolute; bottom: 51px; left: 656px;">
+        <img src="Rectangle 34.png" style="position: absolute; bottom: 51px; left: 452px;">
+
+        <img src="Ellipse 10.png" style="position: absolute; bottom: 536px; left: 354px;">
+        <p style="position: absolute; bottom: 500px; left: 375px; color: white; font-size: 14px;"><b>Japan</b></p>
+        <img src="Ellipse 11.png" style="position: absolute; bottom: 420px; left: 354px;">
+        <p style="position: absolute; bottom: 380px; left: 377px; color: white; font-size: 14px;"><b>USA</b></p>
+        <img src="Ellipse 12.png" style="position: absolute; bottom: 304px; left: 354px;">
+        <p style="position: absolute; bottom: 260px; left: 370px; color: white; font-size: 14px;"><b>Russian</b></p>
+        <img src="Ellipse 13.png" style="position: absolute; bottom: 188px; left: 354px;">
+        <p style="position: absolute; bottom: 140px; left: 370px; color: white; font-size: 14px;"><b>Canada</b></p>
+
+        <img src="Arrow 4.png" style="position: absolute; bottom: 120px; left: 382px;">
+        <img src="Ellipse 14.png" style="position: absolute; bottom: 110px; left: 370px;">
+
+         <img src="Rectangle 25.png" style="position: absolute; bottom: 16px; left: 560px;">
+
+         <p style="position: absolute; bottom: 16px; left: 600px; color: white;"><b>Посты</b></p>
+         <p style="position: absolute; bottom: 16px; left: 700px; color: white;"><b>Сохраненные</b></p>
+         <p style="position: absolute; bottom: 16px; left: 840px; color: white;"><b>Альбомы</b></p>
+
+         <p style="position: absolute; bottom: 560px; left: 250px; color: white;"><b>2000</b></p>
+         <p style="position: absolute; bottom: 540px; left: 245px; color: white;"><b>Посты</b></p>
+         <p style="position: absolute; bottom: 505px; left: 250px; color: white;"><b>1.5К</b></p>
+         <p style="position: absolute; bottom: 485px; left: 224px; color: white;"><b>Подписчиков</b></p>
+         <p style="position: absolute; bottom: 455px; left: 250px; color: white;"><b>1.8К</b></p>
+         <p style="position: absolute; bottom: 435px; left: 233px; color: white;"><b>Подписки</b></p>
+
+
+
+
+
+
+
+
+    </div>
+</body>
+</html>
